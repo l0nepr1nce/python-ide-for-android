@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
@@ -34,3 +35,17 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+=======
+# python-ide-for-android
+Innovative Python IDE for Android
+
+# Roadmap
+<ol>
+  <li>Build up a UI for code editing - ❌</li>
+  <li>Make CRUD - ❌</li>
+  <li>Make a window for a terminal/interpreter (output) - ❌</li>
+  <li>Proceed to git push - ❌</li>
+  <li>Build up an interface for project management - ❌</li>
+  <li>Implement library support - ❌</li>
+</ol>
+>>>>>>> 52f39738a90129d64c6b0c44c9e0f5cdd6ea2602
