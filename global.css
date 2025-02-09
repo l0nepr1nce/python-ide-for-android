@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    font-size: 62.5%;
+}
+
+.shadow-s {
+    filter: drop-shadow(0px 4px 16px #0000003e);
+}
+
+.text-shadow-s {
+    text-shadow: 0px 4px 16px #0000003e;
+}
+
+.sidelined-text {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.sidelined-text .sl-mid {
+    padding: 0 1rem;
+}
+
+.sidelined-text div {
+    background: #fff;
+    height: 1px;
+    width: 100%;
+    box-sizing: border-box;
+}

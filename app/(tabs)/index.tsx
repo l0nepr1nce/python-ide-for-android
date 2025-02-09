@@ -4,57 +4,50 @@ import { HelloWave } from '@/components/HelloWave';
 import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
+import Button from '@/components/ui/Button';
 
 export default function HomeScreen() {
   return (
-    <ParallaxScrollView
-      headerBackgroundColor={{ light: '#A1CEDC', dark: '#1D3D47' }}
-      headerImage={
+    <div className='tab-container'>
+      <div className='tab-home-bg fixed w-full h-full'>
         <Image
-          source={require('@/assets/images/partial-react-logo.png')}
-          style={styles.reactLogo}
+          source={require('@/assets/images/Background.png')}
+          alt=''
+          style={{height: '100%', width: 'auto', zIndex: '-1'}}
         />
-      }>
-      <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Welcome!</ThemedText>
-        <HelloWave />
-      </ThemedView>
-      <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 1: Try it</ThemedText>
-        <ThemedText>
-          Edit <ThemedText type="defaultSemiBold">app/(tabs)/index.tsx</ThemedText> to see changes.
-          Press{' '}
-          <ThemedText type="defaultSemiBold">
-            {Platform.select({
-              ios: 'cmd + d',
-              android: 'cmd + m',
-              web: 'F12'
-            })}
-          </ThemedText>{' '}
-          to open developer tools.
-        </ThemedText>
-      </ThemedView>
-      <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 2: Explore</ThemedText>
-        <ThemedText>
-          Tap the Explore tab to learn more about what's included in this starter app.
-        </ThemedText>
-      </ThemedView>
-      <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 3: Get a fresh start</ThemedText>
-        <ThemedText>
-          When you're ready, run{' '}
-          <ThemedText type="defaultSemiBold">npm run reset-project</ThemedText> to get a fresh{' '}
-          <ThemedText type="defaultSemiBold">app</ThemedText> directory. This will move the current{' '}
-          <ThemedText type="defaultSemiBold">app</ThemedText> to{' '}
-          <ThemedText type="defaultSemiBold">app-example</ThemedText>.
-        </ThemedText>
-      </ThemedView>
-    </ParallaxScrollView>
+      </div>
+      <div className='tab-welcome-banner p-[2rem] pb-[10rem] pt-[25vh] relative h-[100vh] gap-[20vh] flex flex-col justify-center items-center z-0' style={styles.albertSans}>
+        <div className="tab-banner-wrapper flex flex-col items-center w-full mb-auto">
+          <div className="shadow-s">
+            <Image
+              source={require('@/assets/images/logo.svg')}
+              alt=''
+            />
+          </div>
+          <h1 style={styles.unicaFont} className='text-[#fff] text-[4rem] text-shadow-s'>CodeVortex</h1>
+          <div className="sidelined-text mt-[1.5rem] mb-[2rem]">
+            <div></div>
+            <h2 className='text-[2.4rem] sl-mid text-[rgba(255,255,255,.75)] font-light'>Welcome</h2>
+            <div></div>
+          </div>
+          <p className='text-center text-[#fff] text-[2rem]'>A powerful Python IDE<br></br>for all your mobile devices!</p>
+        </div>
+        <Button>Get Started</Button>
+      </div>
+    </div>
   );
 }
 
 const styles = StyleSheet.create({
+  unicaFont: {
+    fontFamily: 'UnicaOne'
+  },
+  albertSans: {
+    fontFamily: 'AlbertSans'
+  },
+});
+
+/*const styles = StyleSheet.create({
   titleContainer: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -71,4 +64,4 @@ const styles = StyleSheet.create({
     left: 0,
     position: 'absolute',
   },
-});
+});*/
