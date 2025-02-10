@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "codevortx-mobile",
-    "slug": "codevortx-mobile",
+    "name": "codevortex",
+    "slug": "codevortex",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -32,8 +32,7 @@
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
         }
-      ],
-      "expo-font"
+      ]
     ],
     "experiments": {
       "typedRoutes": true
