@@ -1,5 +1,6 @@
 import { ReactNode } from 'react';
-import { StyleSheet } from 'react-native';
+import { StyleSheet, View, Text } from 'react-native';
+
 
 interface ButtonProps {
     children: ReactNode;
@@ -7,22 +8,25 @@ interface ButtonProps {
 
 export default function Button({ children }: ButtonProps) {
     return(
-        <div className="common-button" style={styles.commonButton}>
-            <p>{children}</p>
-        </div>
+        <View className="common-button" style={styles.button}>
+            <Text style={styles.buttonText}>{children}</Text>
+        </View>
     );
 }
 
 const styles = StyleSheet.create({
-    commonButton: {
+    button: {
         backgroundColor: '#068FFF',
         borderRadius: 40,
+        paddingHorizontal: 50,
+        paddingVertical: 15,
+        marginTop: 'auto',
+        marginBottom: 100,
+    },
+    buttonText: {
         fontFamily: 'AlbertSans',
-        color: '#fff',
+
         fontSize: 15,
-        paddingInline: '5rem',
-        paddingTop: '1.2rem',
-        paddingBottom: '1.2rem',
-        marginTop: 'auto'
+        color: '#fff',
     }
 });
