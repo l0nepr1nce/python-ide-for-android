@@ -1,9 +1,4 @@
-import { Image, StyleSheet, Platform, Text, View } from 'react-native';
-
-import { HelloWave } from '@/components/HelloWave';
-import ParallaxScrollView from '@/components/ParallaxScrollView';
-import { ThemedText } from '@/components/ThemedText';
-import { ThemedView } from '@/components/ThemedView';
+import { Image, StyleSheet, Text, View } from 'react-native';
 
 import LogoPartVortex from '@/assets/images/vortex.svg';
 
@@ -11,18 +6,8 @@ import tw from 'twrnc';
 import Button from '@/components/ui/Button';
 
 export default function HomeScreen() {
-  /*return (
-    <ThemedView className='tab-home-container' style={tw`absolute h-full flex flex-col`}>
-      <ThemedView className='tab-home-background' style={tw`absolute top-0 left-0 w-full h-full`}>
-        <Image source={require('@/assets/images/Background.png')} />
-      </ThemedView>
-      <ThemedView className="tab-banner-content" style={tw`absolute w-full h-full flex justify-center items-center`}>
-        <Image source={require('@/assets/images/logo.svg')} style={tw`w-[64px] h-[64px] border-2 border-white rounded-full`} />
-      </ThemedView>
-    </ThemedView>
-  );*/
   return (
-    <View className='tab-home-container' style={tw`relative bg-red w-full h-full`}>
+    <View className='tab-home-container' style={tw`relative w-full h-full`}>
       <Image source={require('@/assets/images/Background.png')} style={{
         width: '100%',
         height: '100%',

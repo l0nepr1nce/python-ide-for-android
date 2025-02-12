@@ -1,27 +1,16 @@
-import { StyleSheet } from 'react-native';
-import { ThemedText } from '@/components/ThemedText';
-import { ThemedView } from '@/components/ThemedView';
+import { TouchableOpacity, Image, StyleSheet, Text, View } from 'react-native';
 
-export default function Test() {
-    return (
-        <>
-            <ThemedView style={styles.titleContainer}>
-                <ThemedText>Test</ThemedText>
-            </ThemedView>
-        </>
-    );
+import LogoPartVortex from '@/assets/images/vortex.svg';
+
+import tw from 'twrnc';
+
+import FontAwesome6 from '@react-native-vector-icons/fontawesome6';
+const icon = <FontAwesome6 name="bell" iconStyle="solid" />;
+
+export default function HomeScreen() {
+  return (
+    <View  style={tw`relative w-full h-full`}>
+      {icon}
+    </View>
+  );
 }
-
-const styles = StyleSheet.create({
-    headerImage: {
-      color: '#808080',
-      bottom: -90,
-      left: -35,
-      position: 'absolute',
-    },
-    titleContainer: {
-      flexDirection: 'row',
-      gap: 8,
-    },
-  });
-  
