@@ -1,9 +1,14 @@
-import { StyleSheet, Image, View, Text } from 'react-native';
+import { StyleSheet, Image, View, Text, ScrollView, TouchableOpacity } from 'react-native';
 
 import tw from 'twrnc';
 
 import LogoPartVortex from '@/assets/images/vortex.svg';
-import LogoPy from '@/assets/images/python-original.svg';
+
+import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
+import { faPython } from '@fortawesome/free-brands-svg-icons/faPython'
+import ExploreMenuPlank from '@/components/ui/ExploreMenuPlank';
+import Button from '@/components/ui/Button';
+import TouchableButton from '@/components/ui/TouchableButton';
 
 export default function TabTwoScreen() {
   return (
@@ -34,22 +39,24 @@ export default function TabTwoScreen() {
             textAlign: 'center',
           }}>CodeVortex</Text>
         </View>
-        <View className='tab-project-list'>
+        <View className='tab-project-list' style={tw`w-full px-[10px] flex flex-col gap-3 items-center`}>
           <Text style={{
             position: 'relative',
             fontFamily: 'AlbertSans',
             fontSize: 16,
             color: '#fff',
           }}>Your recent projects:</Text>
-          <View className='pl-box'>
-            <View className='pl-box-item'>
-              <View className='pl-box-item-wrap'>
-                
-              </View>
-              <View className='pl-box-item-wrap'>
-              </View>
-            </View>
-          </View>
+          <ScrollView className='pl-box' style={tw`w-full p-[10px] flex flex-col gap-1 overflow-scroll h-full max-h-[30%] min-h-[225px]`}>
+            <ExploreMenuPlank />
+            <ExploreMenuPlank />
+            <ExploreMenuPlank />
+            <ExploreMenuPlank />
+            <ExploreMenuPlank />
+            <ExploreMenuPlank />
+          </ScrollView>
+          <TouchableButton style={{
+            marginTop: 'auto',
+          }} title='Clear History' />
         </View>
       </View>
     </View>

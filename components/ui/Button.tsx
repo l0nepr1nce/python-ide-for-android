@@ -25,7 +25,6 @@ const styles = StyleSheet.create({
     },
     buttonText: {
         fontFamily: 'AlbertSans',
-
         fontSize: 15,
         color: '#fff',
     }
