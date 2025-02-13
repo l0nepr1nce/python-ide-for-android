@@ -1,3 +1,40 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@media (max-height: 700px) and (min-height: 480px) {
+    .tab-banner-logo-wrap {
+        padding: 0 20px;
+        flex-direction: row !important;
+        justify-content: center !important;
+    }
+
+    .tab-banner-logo-icon {
+        flex: none !important;
+        max-width: 80px !important;
+        max-height: 80px !important;
+    }
+
+    .tab-banner-logo-text {
+        padding-bottom: 0px !important;
+        width: auto !important;
+    }
+}
+
+@media screen and (max-height: 480px) {
+    .tab-banner-logo-icon {
+        display: none !important;
+    }
+}
+
+@media screen and (max-height: 800px) and (min-height: 660px) {
+    .options-menu-button-text {
+        font-size: 12px !important;
+    }
+}
+
+@media screen and (max-height: 660px) {
+    .options-menu-button-text {
+        display: none;
+    }
+}
