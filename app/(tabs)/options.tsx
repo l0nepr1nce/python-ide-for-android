@@ -151,5 +151,6 @@ const styles = StyleSheet.create({
   },
   buttonIcon: {
     opacity: 1,
+    outline: 'none'
   },
 });

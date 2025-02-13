@@ -22,7 +22,7 @@ export default function HomeScreen() {
         <View className='sidelined-text-line' style={styles.sidelinedTextLine}></View>
       </View>
       <Text style={{
-        fontFamily: 'AlbertSans',
+        fontFamily: 'SpaceMono',
         fontSize: 20,
         color: 'white',
         textAlign: 'center',
